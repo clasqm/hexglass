@@ -2,7 +2,7 @@ CHANGES
 COPYING
 MANIFEST
 README
-hexglass.pro
+CMakeLists.txt
 resources/about_icon.xpm
 resources/hexglass.ico
 resources/hexglass.qrc

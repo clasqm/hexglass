@@ -31,7 +31,7 @@ DisplayWidget::DisplayWidget(QWidget * parent) :
 
     setAutoFillBackground(true);
     pp = palette();
-    pp.setColor(QPalette::Background, QColor(80, 80, 80));
+    pp.setColor(QPalette::Window, QColor(80, 80, 80));
     setPalette(pp);
 
     QGridLayout * layout = new QGridLayout();

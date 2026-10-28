@@ -141,7 +141,7 @@ int main(int argc, char **argv)
 
     central_widget->setAutoFillBackground(true);
     QPalette pp(central_widget->palette());
-    pp.setColor(QPalette::Background, QColor(50, 50, 50));
+    pp.setColor(QPalette::Window, QColor(50, 50, 50));
     central_widget->setPalette(pp);
 
     QGridLayout * layout = new QGridLayout();

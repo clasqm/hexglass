@@ -30,8 +30,8 @@ ScoreWidget::ScoreWidget(QWidget * p) :
 {
     setAutoFillBackground(true);
     QPalette pp(palette());
-    pp.setColor(QPalette::Background, QColor(0, 0, 0));
-    pp.setColor(QPalette::Foreground, QColor(255, 255, 0));
+    pp.setColor(QPalette::Window, QColor(0, 0, 0));
+    pp.setColor(QPalette::WindowText, QColor(255, 255, 0));
     setPalette(pp);
 
     setAlignment(Qt::AlignCenter);
@@ -52,8 +52,8 @@ ScoreWidget::ScoreWidget(QWidget * p) :
 void
 ScoreWidget::update_color() {
     QPalette pp(palette());
-    pp.setColor(QPalette::Foreground, QColor(255, 255, color_val * 5));
-    pp.setColor(QPalette::Background, QColor(color_val, color_val, color_val));
+    pp.setColor(QPalette::WindowText, QColor(255, 255, color_val * 5));
+    pp.setColor(QPalette::Window, QColor(color_val, color_val, color_val));
     setPalette(pp);
     --color_val;
     if (color_val >= 0) {

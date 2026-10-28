@@ -26,8 +26,8 @@ HeadWidget::HeadWidget(QWidget * p) :
 {
     setAutoFillBackground(true);
     QPalette pp(palette());
-    pp.setColor(QPalette::Background, QColor(20, 20, 20));
-    pp.setColor(QPalette::Foreground, QColor(255, 255, 255));
+    pp.setColor(QPalette::Window, QColor(20, 20, 20));
+    pp.setColor(QPalette::WindowText, QColor(255, 255, 255));
     setPalette(pp);
 
     setAlignment(Qt::AlignCenter);

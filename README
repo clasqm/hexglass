@@ -38,12 +38,13 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 Build
 =====
 
-Before building, you will need to have the Qt4 library and developers
-tools installed on your system (http://www.trolltech.com/).
+Before building, you will need to have the Qt5 library and developers
+tools installed on your system (https://www.qt.io/).
 
 Build:
 
-$ qmake # or qmake-qt4
+$ mkdir build && cd build
+$ cmake ..
 $ make  # or gmake or mingw32-make or nmake or other
 
 Test it:
@@ -54,14 +55,9 @@ Install:
 
 $ sudo make install
 
-Uninstall:
-
-$ sudo make uninstall
-
 You can specify some options in build time.
-Setup default size and skin:
-
-$ qmake 'DEFINES += DEFAULT_SIZE=0 DEFAULT_SKIN=0'
+To setup default size and skin, uncomment the corresponding
+add_definitions() lines in CMakeLists.txt.
 
 Enjoy!
 
